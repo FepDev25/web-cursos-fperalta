@@ -6,9 +6,157 @@
     <title>Cursos Web</title>
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="superior contenedor">
+
+        <header class="header">
+            <h1 class="titulo">Gestión de Cursos</h1>
     
+            <nav class="navegacion">
+                <a class="navegacion-enlace" href=".">Inicio</a>
+                <a class="navegacion-enlace" href=".">Cursos</a>
+                <a class="navegacion-enlace" href=".">Agregar Curso</a>
+                <a class="navegacion-enlace" href=".">Contacto</a>
+            </nav>
+
+            <img class="logo-ups" src="./img/ups.png" alt="Imagen cursos">
+    
+        </header>
+
+        <div class="separador"></div>
+    
+        <section class="header-bajo">
+            <div class="descripcion">
+                <div>
+                    <h2>Gestiona tus cursos</h2>
+                    <h3 class="subtitulo">Contenido</h3>
+                    <p>Esta página web está diseñada para facilitar la gestión eficiente de cursos académicos.</p>
+                    <p>La página cuenta con una barra de navegación intuitiva que permite acceder fácilmente a diferentes secciones principales: Inicio, Cursos, Agregar Curso y Contacto.</p>
+                    <p>La sección principal destaca la gestión de cursos, mostrando una lista ordenada de cursos activos. </p>
+                    <p>La página incorpora un formulario de registro de cursos, donde usuarios pueden ingresar nuevos cursos con detalle. Este formulario cuenta con validaciones en tiempo real para que los cursos sean ingresados correctamente.</p>
+                    <p>La página ha sido realizada por Diego Felipe Peralta Peralta, estudiante de quinto cilo de la carrera de computación. Se puede encontrar los enlaces de comunicación en la sección de contactos.</p>
+                </div>
+    
+                <img class="img-cursos" src="./img/books.png" alt="Imagen cursos">
+            </div>
+
+            <a class="boton boton-crear-curso" href=".">Crear Curso</a>
+
+            
+        </section>  
+
+    </div>
+
+    
+
+    <main class="contenedor">
+
+        <div class="listado">
+            <h2>Listado de cursos:</h2>
+
+            <div class="cursos">
+                <div class="curso">
+                    <p>Nombre: Gestión de bases de datos</p>
+                    <p>Instructor: Jhonny Segarra</p>
+                    <p>Fecha de Inicio: 12/10/2024</p>
+                    <p>Duración: 4 meses</p>
+                    <p class="curso-mostrar-info">Ver información completa...</p>
+                </div>
+
+                <div class="curso">
+                    <p>Nombre: Gestión de bases de datos</p>
+                    <p>Instructor: Jhonny Segarra</p>
+                    <p>Fecha de Inicio: 12/10/2024</p>
+                    <p>Duración: 4 meses</p>
+                    <p class="curso-mostrar-info">Ver información completa...</p>
+                </div>
+
+                <div class="curso">
+                    <p>Nombre: Gestión de bases de datos</p>
+                    <p>Instructor: Jhonny Segarra</p>
+                    <p>Fecha de Inicio: 12/10/2024</p>
+                    <p>Duración: 4 meses</p>
+                    <p class="curso-mostrar-info">Ver información completa...</p>
+                </div>
+
+
+                <div class="curso">
+                    <p>Nombre: Gestión de bases de datos</p>
+                    <p>Instructor: Jhonny Segarra</p>
+                    <p>Fecha de Inicio: 12/10/2024</p>
+                    <p>Duración: 4 meses</p>
+                    <p class="curso-mostrar-info">Ver información completa...</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <section class="contenedor">
+        <h2>Agregar un nuevo curso:</h2>
+        <form>
+            <fieldset>
+                <legend>Formulario para nuevo curso</legend>
+
+                <div  class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre del curso</label>
+                        <input class="input-text" type="text">
+                    </div>
+
+                    <div class="campo">
+                        <label>Nombre del instructor</label>
+                        <input class="input-text" type="text">
+                    </div>
+
+                    <div class="campo">
+                        <label>Fecha de inicio</label>
+                        <input class="input-text" type="date" >
+                    </div>
+                    
+                    <div class="campo">
+                        <label>Duración</label>
+                        <input class="input-text" type="date"></input>
+                    </div>
+
+                    <div class="campo"></div>
+                        <label>Descripción</label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+
+                    <input class="boton" type="submit" value="Enviar">
+
+                </div>
+
+                
+
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="contenedor contacto">
+        <h2>Contacto</h2>
+        <p>Mi nombre es Felipe Peralta.</p>
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados.</p>
+        <p>Universidad Politécnica Salesiana.</p>
+        <p>Programación y plataformas Web.</p>
+        <p>Felipe Peralta.</p>
+    </footer>
 
     <script src="./js/app.js"></script>
 </body>
