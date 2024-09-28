@@ -44,7 +44,7 @@
                     <p>La página cuenta con una barra de navegación intuitiva que permite acceder fácilmente a diferentes secciones principales: Inicio, Cursos, Agregar Curso y Contacto.</p>
                     <p>La sección principal destaca la gestión de cursos, mostrando una lista ordenada de cursos activos. </p>
                     <p>La página incorpora un formulario de registro de cursos, donde usuarios pueden ingresar nuevos cursos con detalle. Este formulario cuenta con validaciones en tiempo real para que los cursos sean ingresados correctamente.</p>
-                    <p>La página ha sido realizada por Diego Felipe Peralta Peralta, estudiante de quinto cilo de la carrera de computación. Se puede encontrar los enlaces de comunicación en la sección de contactos.</p>
+                    <p>La página ha sido realizada por Diego Felipe Peralta Peralta, estudiante de quinto ciclo de la carrera de computación en la materia de Programación y plataformas web. Se puede encontrar los enlaces de comunicación en la sección de contactos.</p>
                 </div>
     
                 <img class="img-cursos" src="./img/books.png" alt="Imagen cursos">
@@ -66,36 +66,36 @@
 
             <div class="cursos">
                 <div class="curso">
-                    <p>Nombre: Gestión de bases de datos</p>
-                    <p>Instructor: Jhonny Segarra</p>
-                    <p>Fecha de Inicio: 12/10/2024</p>
-                    <p>Duración: 4 meses</p>
-                    <p class="curso-mostrar-info">Ver información completa...</p>
+                    <p><span class="curo-caracteristica">Nombre:</span> Gestión de bases de datos</p>
+                    <p><span class="curo-caracteristica">Instructor:</span> Jhonny Segarra</p>
+                    <p><span class="curo-caracteristica">Fecha de Inicio:</span> 12/10/2024</p>
+                    <p><span class="curo-caracteristica">Duración:</span> 4 meses</p>
+                    <p class="curso-mostrar-info">Información completa</p>
                 </div>
 
                 <div class="curso">
-                    <p>Nombre: Gestión de bases de datos</p>
-                    <p>Instructor: Jhonny Segarra</p>
-                    <p>Fecha de Inicio: 12/10/2024</p>
-                    <p>Duración: 4 meses</p>
-                    <p class="curso-mostrar-info">Ver información completa...</p>
+                    <p><span class="curo-caracteristica">Nombre:</span> Gestión de bases de datos</p>
+                    <p><span class="curo-caracteristica">Instructor:</span> Jhonny Segarra</p>
+                    <p><span class="curo-caracteristica">Fecha de Inicio:</span> 12/10/2024</p>
+                    <p><span class="curo-caracteristica">Duración:</span> 4 meses</p>
+                    <p class="curso-mostrar-info">Información completa</p>
                 </div>
 
                 <div class="curso">
-                    <p>Nombre: Gestión de bases de datos</p>
-                    <p>Instructor: Jhonny Segarra</p>
-                    <p>Fecha de Inicio: 12/10/2024</p>
-                    <p>Duración: 4 meses</p>
-                    <p class="curso-mostrar-info">Ver información completa...</p>
+                    <p><span class="curo-caracteristica">Nombre:</span> Gestión de bases de datos</p>
+                    <p><span class="curo-caracteristica">Instructor:</span> Jhonny Segarra</p>
+                    <p><span class="curo-caracteristica">Fecha de Inicio:</span> 12/10/2024</p>
+                    <p><span class="curo-caracteristica">Duración:</span> 4 meses</p>
+                    <p class="curso-mostrar-info">Información completa</p>
                 </div>
 
 
                 <div class="curso">
-                    <p>Nombre: Gestión de bases de datos</p>
-                    <p>Instructor: Jhonny Segarra</p>
-                    <p>Fecha de Inicio: 12/10/2024</p>
-                    <p>Duración: 4 meses</p>
-                    <p class="curso-mostrar-info">Ver información completa...</p>
+                    <p><span class="curo-caracteristica">Nombre:</span> Gestión de bases de datos</p>
+                    <p><span class="curo-caracteristica">Instructor:</span> Jhonny Segarra</p>
+                    <p><span class="curo-caracteristica">Fecha de Inicio:</span> 12/10/2024</p>
+                    <p><span class="curo-caracteristica">Duración:</span> 4 meses</p>
+                    <p class="curso-mostrar-info">Información completa</p>
                 </div>
 
 
@@ -105,51 +105,63 @@
     </main>
 
     <section class="contenedor">
-        <h2>Agregar un nuevo curso:</h2>
-        <form>
-            <fieldset>
-                <legend>Formulario para nuevo curso</legend>
+        <div class="formulario">
+            <h2>Agregar un nuevo curso:</h2>
+            <form>
+                <fieldset>
+                    <legend>Llena los siguientes campos para agregar un nuevo curso</legend>
 
-                <div  class="contenedor-campos">
-                    <div class="campo">
-                        <label>Nombre del curso</label>
-                        <input class="input-text" type="text">
+                    <div  class="contenedor-campos">
+
+                        <div class="ingresos-cortos">
+                            <div class="campo">
+                                <label>Nombre del curso</label>
+                                <input placeholder="Ej: Electrónica" class="input-text" type="text">
+                            </div>
+    
+                            <div class="campo">
+                                <label>Nombre del instructor</label>
+                                <input placeholder="Nombre del instructor" class="input-text" type="text">
+                            </div>
+    
+                            <div class="campo">
+                                <label>Fecha de inicio</label>
+                                <input class="input-text" type="date" >
+                            </div>
+                            
+                            <div class="campo">
+                                <label>Fecha de fin</label>
+                                <input class="input-text" type="date"></input>
+                            </div>
+    
+                        </div>
+
+                        
+                        <div class="campo"></div>
+                            <label>Descripción</label>
+                            <textarea placeholder="Descripción del curso" class="descripcion-textarea input-text"></textarea>
+                        </div>
+
+                        <input class="boton" type="submit" value="Enviar">
+
                     </div>
+                </fieldset>
+            </form>
 
-                    <div class="campo">
-                        <label>Nombre del instructor</label>
-                        <input class="input-text" type="text">
-                    </div>
-
-                    <div class="campo">
-                        <label>Fecha de inicio</label>
-                        <input class="input-text" type="date" >
-                    </div>
-                    
-                    <div class="campo">
-                        <label>Duración</label>
-                        <input class="input-text" type="date"></input>
-                    </div>
-
-                    <div class="campo"></div>
-                        <label>Descripción</label>
-                        <textarea class="input-text"></textarea>
-                    </div>
-
-                    <input class="boton" type="submit" value="Enviar">
-
-                </div>
-
-                
-
-            </fieldset>
-        </form>
+        </div>
+        
     </section>
 
     <section class="contenedor contacto">
         <h2>Contacto</h2>
-        <p>Mi nombre es Felipe Peralta.</p>
+        <div class="informacion-contacto">
+            <p><strong>Dirección:</strong> Universidad Politécnica Salesiana, Cuenca, Ecuador</p>
+            <p><strong>Teléfono:</strong> +593 939019136</p>
+            <p><strong>Email:</strong> dperaltap2@est.ups.edu.ec</p>
+            <p><strong>Github:</strong> <a href="https://github.com/FepDev25">Este enlace</a></p>
+        </div>
     </section>
+    
 
     <footer>
         <p>Todos los derechos reservados.</p>
