@@ -17,16 +17,16 @@
 </head>
 <body>
 
-    <div class="superior contenedor">
+    <div id="inicio" class="superior contenedor">
 
         <header class="header">
             <h1 class="titulo">Gestión de Cursos</h1>
     
             <nav class="navegacion">
-                <a class="navegacion-enlace" href=".">Inicio</a>
-                <a class="navegacion-enlace" href=".">Cursos</a>
-                <a class="navegacion-enlace" href=".">Agregar Curso</a>
-                <a class="navegacion-enlace" href=".">Contacto</a>
+                <a class="navegacion-enlace" href="#inicio">Inicio</a>
+                <a class="navegacion-enlace" href="#listadocursos">Cursos</a>
+                <a class="navegacion-enlace" href="#crearcurso">Agregar Curso</a>
+                <a class="navegacion-enlace" href="#contacto">Contacto</a>
             </nav>
 
             <img class="logo-ups" src="./img/ups.png" alt="Imagen cursos">
@@ -44,13 +44,13 @@
                     <p>La página cuenta con una barra de navegación intuitiva que permite acceder fácilmente a diferentes secciones principales: Inicio, Cursos, Agregar Curso y Contacto.</p>
                     <p>La sección principal destaca la gestión de cursos, mostrando una lista ordenada de cursos activos. </p>
                     <p>La página incorpora un formulario de registro de cursos, donde usuarios pueden ingresar nuevos cursos con detalle. Este formulario cuenta con validaciones en tiempo real para que los cursos sean ingresados correctamente.</p>
-                    <p>La página ha sido realizada por Diego Felipe Peralta Peralta, estudiante de quinto ciclo de la carrera de computación en la materia de Programación y plataformas web. Se puede encontrar los enlaces de comunicación en la sección de contactos.</p>
+                    <p>La página ha sido realizada por Diego Felipe Peralta Peralta, estudiante de quinto ciclo de la carrera de computación en la materia de Programación y plataformas web. Se puede encontrar los enlaces de comunicación en la sección de contacto.</p>
                 </div>
     
                 <img class="img-cursos" src="./img/books.png" alt="Imagen cursos">
             </div>
 
-            <a class="boton boton-crear-curso" href=".">Crear Curso</a>
+            <a class="boton boton-crear-curso" href="#crearcurso">Crear Curso</a>
 
             
         </section>  
@@ -61,51 +61,17 @@
 
     <main class="contenedor">
 
-        <div class="listado">
+        <div id="listadocursos" class="listado">
             <h2>Listado de cursos:</h2>
 
             <div class="cursos">
-                <div class="curso">
-                    <p><span class="curo-caracteristica">Nombre:</span> Gestión de bases de datos</p>
-                    <p><span class="curo-caracteristica">Instructor:</span> Jhonny Segarra</p>
-                    <p><span class="curo-caracteristica">Fecha de Inicio:</span> 12/10/2024</p>
-                    <p><span class="curo-caracteristica">Duración:</span> 4 meses</p>
-                    <p class="curso-mostrar-info">Información completa</p>
-                </div>
-
-                <div class="curso">
-                    <p><span class="curo-caracteristica">Nombre:</span> Gestión de bases de datos</p>
-                    <p><span class="curo-caracteristica">Instructor:</span> Jhonny Segarra</p>
-                    <p><span class="curo-caracteristica">Fecha de Inicio:</span> 12/10/2024</p>
-                    <p><span class="curo-caracteristica">Duración:</span> 4 meses</p>
-                    <p class="curso-mostrar-info">Información completa</p>
-                </div>
-
-                <div class="curso">
-                    <p><span class="curo-caracteristica">Nombre:</span> Gestión de bases de datos</p>
-                    <p><span class="curo-caracteristica">Instructor:</span> Jhonny Segarra</p>
-                    <p><span class="curo-caracteristica">Fecha de Inicio:</span> 12/10/2024</p>
-                    <p><span class="curo-caracteristica">Duración:</span> 4 meses</p>
-                    <p class="curso-mostrar-info">Información completa</p>
-                </div>
-
-
-                <div class="curso">
-                    <p><span class="curo-caracteristica">Nombre:</span> Gestión de bases de datos</p>
-                    <p><span class="curo-caracteristica">Instructor:</span> Jhonny Segarra</p>
-                    <p><span class="curo-caracteristica">Fecha de Inicio:</span> 12/10/2024</p>
-                    <p><span class="curo-caracteristica">Duración:</span> 4 meses</p>
-                    <p class="curso-mostrar-info">Información completa</p>
-                </div>
-
-
             </div>
         </div>
 
     </main>
 
     <section class="contenedor">
-        <div class="formulario">
+        <div id="crearcurso" class="formulario">
             <h2>Agregar un nuevo curso:</h2>
             <form>
                 <fieldset>
@@ -139,10 +105,11 @@
                         
                         <div class="campo"></div>
                             <label>Descripción</label>
-                            <textarea placeholder="Descripción del curso" class="descripcion-textarea input-text"></textarea>
+                            <textarea placeholder="Descripción del curso (al menos 30 caracteres)" class="descripcion-textarea input-text"></textarea>
                         </div>
 
                         <input class="boton" type="submit" value="Enviar">
+                        <p class="error"></p>
 
                     </div>
                 </fieldset>
@@ -152,7 +119,7 @@
         
     </section>
 
-    <section class="contenedor contacto">
+    <section id="contacto" class="contenedor contacto">
         <h2>Contacto</h2>
         <div class="informacion-contacto">
             <p><strong>Dirección:</strong> Universidad Politécnica Salesiana, Cuenca, Ecuador</p>
